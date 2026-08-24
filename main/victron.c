@@ -2,9 +2,8 @@
 
 /* https://github.com/mk4001/VE-Display */
 
-
-
-
+#include <stdio.h>
+#include <stdint.h>
 
 bool is_victron_advertisement(const uint8_t *data, uint8_t len)
 {
@@ -46,9 +45,7 @@ bool is_victron_advertisement(const uint8_t *data, uint8_t len)
     return false;
 }
 
-
-
-/* 
+/*
 
 Offset   Length   Meaning
 ------   ------   ---------------------------
@@ -73,8 +70,6 @@ bits 80..111    Device Off Reason
 https://community.victronenergy.com/t/orion-xs-12v-12v-50a-bluetooth-advertising-data/2183
 
 */
-
-
 
 bool get_victron_data(
     const uint8_t *data,
@@ -123,4 +118,3 @@ bool get_victron_data(
 
     return false;
 }
-
