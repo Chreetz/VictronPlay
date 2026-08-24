@@ -1,0 +1,16 @@
+dependencies:
+  hci_common_component:
+    dependencies: []
+    source:
+      path: ../../../esp/v6.0.2/esp-idf/examples/bluetooth/hci/hci_common_component
+      type: local
+    version: '*'
+  idf:
+    source:
+      type: idf
+    version: 6.0.2
+direct_dependencies:
+- hci_common_component
+manifest_hash: e8e47b8694e7c38b1dd974fe0571f3bb9d12876b4dbae421adb3fdbc5ca4ee1c
+target: esp32
+version: 3.0.0
